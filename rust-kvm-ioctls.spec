@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.11.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Safe wrappers over KVM ioctls
 
 # Upstream license specification: Apache-2.0 OR MIT
@@ -71,5 +71,8 @@ use the "default" feature of the "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jul 23 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.11.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
+
 * Tue Jun 07 2022 Sergio Lopez <slp@redhat.com> - 0.11.0-1
 - Initial package
