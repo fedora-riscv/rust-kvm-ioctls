@@ -5,7 +5,7 @@
 %global crate kvm-ioctls
 
 Name:           rust-kvm-ioctls
-Version:        0.14.0
+Version:        0.15.0
 Release:        1%{?dist}
 Summary:        Safe wrappers over KVM ioctls
 
@@ -70,6 +70,9 @@ use the "default" feature of the "%{crate}" crate.
 %endif
 
 %changelog
+* Tue Oct 31 2023 Sergio Lopez <slp@redhat.com> - 0.15.0-1
+- Update to version 0.15.0
+
 * Wed Jul 12 2023 Sergio Lopez <slp@redhat.com> - 0.14.0-1
 - Update to version 0.14.0
 - Regenerate with rust2rpm 24
