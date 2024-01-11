@@ -6,7 +6,7 @@
 
 Name:           rust-kvm-ioctls
 Version:        0.15.0
-Release:        1%{?dist}
+Release:        %autorelease
 Summary:        Safe wrappers over KVM ioctls
 
 License:        Apache-2.0 OR MIT
@@ -70,24 +70,4 @@ use the "default" feature of the "%{crate}" crate.
 %endif
 
 %changelog
-* Tue Oct 31 2023 Sergio Lopez <slp@redhat.com> - 0.15.0-1
-- Update to version 0.15.0
-
-* Fri Jul 21 2023 Fedora Release Engineering <releng@fedoraproject.org> - 0.14.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
-
-* Wed Jul 12 2023 Sergio Lopez <slp@redhat.com> - 0.14.0-1
-- Update to version 0.14.0
-- Regenerate with rust2rpm 24
-
-* Wed Feb 08 2023 Sergio Lopez <slp@redhat.com> - 0.13.0-1
-- Update to version 0.13.0
-
-* Fri Jan 20 2023 Fedora Release Engineering <releng@fedoraproject.org> - 0.11.0-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_38_Mass_Rebuild
-
-* Sat Jul 23 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.11.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
-
-* Tue Jun 07 2022 Sergio Lopez <slp@redhat.com> - 0.11.0-1
-- Initial package
+%autochangelog
