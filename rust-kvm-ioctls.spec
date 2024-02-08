@@ -6,7 +6,7 @@
 
 Name:           rust-kvm-ioctls
 Version:        0.16.0
-Release:        %autorelease
+Release:        %autorelease -e rv64
 Summary:        Safe wrappers over KVM ioctls
 
 License:        Apache-2.0 OR MIT
@@ -14,7 +14,7 @@ URL:            https://crates.io/crates/kvm-ioctls
 Source:         %{crates_source}
 
 # This crate only supports x86_64 and aarch64 targets
-ExclusiveArch:  x86_64 aarch64
+ExclusiveArch:  x86_64 aarch64 riscv64
 
 BuildRequires:  cargo-rpm-macros >= 24
 
